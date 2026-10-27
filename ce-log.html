@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CE Log — Free Printable</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color: #1f2937; line-height: 1.5; margin: 0; padding: 16px; font-size: 13px; }
+  .page { max-width: 210mm; margin: 0 auto; background: #fff; padding: 14mm 16mm; }
+  header { border-bottom: 3px solid #14532d; padding-bottom: 8px; margin-bottom: 14px; }
+  h1 { font-size: 22px; margin: 0 0 3px; color: #14532d; }
+  .subtitle { color: #4b5563; font-size: 12px; margin: 0 0 2px; }
+  .disclaimer { background: #fef3c7; border: 1px solid #d97706; color: #78350f; padding: 7px 10px; border-radius: 5px; font-size: 11px; margin-bottom: 14px; }
+  h2 { font-size: 15px; border-bottom: 1px solid #e5e7eb; padding-bottom: 4px; margin: 18px 0 9px; color: #14532d; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 9px; margin-bottom: 10px; }
+  .field { display: flex; flex-direction: column; gap: 3px; }
+  .field label { font-size: 10.5px; font-weight: 700; color: #374151; text-transform: uppercase; letter-spacing: 0.05em; }
+  input, select, textarea { width: 100%; padding: 5px 7px; border: 1px solid #d1d5db; border-radius: 4px; font-size: 12.5px; background: #fff; font: inherit; }
+  input:focus { outline: none; border-color: #16a34a; }
+  table { width: 100%; border-collapse: collapse; margin-bottom: 9px; }
+  th, td { border: 1px solid #d1d5db; padding: 5px 7px; font-size: 12px; text-align: left; vertical-align: top; }
+  th { background: #f3f4f6; font-weight: 700; font-size: 11px; }
+  td input { width: 100%; padding: 3px 5px; border: none; font-size: 12px; font-family: inherit; background: transparent; }
+  td input:focus { outline: 2px solid #16a34a; border-radius: 2px; }
+  .totals { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 9px; margin-bottom: 8px; }
+  .total { border: 1px solid #d1d5db; border-radius: 5px; padding: 8px; background: #f9fafb; }
+  .total .label { font-size: 10.5px; font-weight: 700; color: #374151; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 3px; }
+  .total .value { font-size: 16px; font-weight: 700; color: #14532d; }
+  .checkboxes { display: flex; flex-wrap: wrap; gap: 12px 18px; margin-bottom: 8px; }
+  .checkbox-item { display: flex; align-items: center; gap: 5px; font-size: 12.5px; }
+  .checkbox-item input { width: auto; flex: none; }
+  .lines { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 16px; margin-bottom: 6px; }
+  .line { border-bottom: 1px solid #9ca3af; padding-bottom: 3px; min-height: 22px; font-size: 12.5px; }
+  .signature { margin-top: 20px; border-top: 1px solid #9ca3af; padding-top: 7px; font-size: 11.5px; color: #4b5563; }
+  .credit { margin-top: 22px; padding-top: 9px; border-top: 1px solid #e5e7eb; font-size: 10.5px; color: #6b7280; text-align: center; line-height: 1.6; }
+  .no-print { margin-bottom: 10px; text-align: center; }
+  .btn { display: inline-block; padding: 6px 14px; background: #14532d; color: #fff; border-radius: 5px; text-decoration: none; font-size: 12.5px; font-weight: 600; border: none; cursor: pointer; }
+  .btn:hover { background: #114324; }
+  @media print {
+    body { background: #fff; padding: 0; font-size: 12px; }
+    .page { max-width: 100%; width: 100%; padding: 14mm 15mm; box-shadow: none; }
+    .no-print { display: none !important; }
+    header { border-bottom-color: #000; }
+    h2 { border-bottom-color: #000; }
+    .disclaimer { background: #fff !important; color: #000 !important; border-color: #000; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    table { page-break-inside: auto; }
+    tr { page-break-inside: avoid; }
+    input { border: 1px solid #000 !important; color: #000 !important; background: #fff !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    input[type=checkbox] { width: 11px; height: 11px; accent-color: #000; }
+    .total { border-color: #000; background: #fff !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .total .value { color: #000 !important; }
+    .signature { border-top-color: #000; }
+    .credit { border-top-color: #000; color: #000; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+<header>
+  <h1>Continuing Education (CE) Log</h1>
+  <p class="subtitle">Track CE hours, costs, and certificates &middot; Print for your portfolio &middot; Education only &mdash; not medical advice</p>
+</header>
+
+<p class="disclaimer"><strong>Education only.</strong> This log is an organizational aid. CE requirements vary by state and certifying body &mdash; always verify hours, categories, and deadlines with your state board of nursing and employer before relying on this log.</p>
+
+<h2>License information</h2>
+<div class="grid">
+  <div class="field"><label>Nurse name</label><input type="text"></div>
+  <div class="field"><label>License number</label><input type="text"></div>
+  <div class="field"><label>State</label><input type="text"></div>
+  <div class="field"><label>License expires</label><input type="date"></div>
+  <div class="field"><label>Renewal period (from &ndash; to)</label><input type="text"></div>
+  <div class="field"><label>CE hours required</label><input type="text"></div>
+</div>
+
+<h2>CE entries</h2>
+<table>
+  <thead><tr><th style="width:5%">#</th><th style="width:12%">Date</th><th style="width:26%">Course title</th><th style="width:18%">Provider</th><th style="width:9%">CE hours</th><th style="width:16%">Category / type</th><th style="width:9%">Cost</th><th style="width:13%">Certificate saved?</th><th>Renewal credit applied to</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td><input type="date"></td><td><input></td><td><input></td><td><input type="number" step="0.25" min="0"></td><td><input></td><td><input></td><td><input></td><td><input></td></tr>
+    <tr><td>2</td><td><input type="date"></td><td><input></td><td><input></td><td><input type="number" step="0.25" min="0"></td><td><input></td><td><input></td><td><input></td><td><input></td></tr>
+    <tr><td>3</td><td><input type="date"></td><td><input></td><td><input></td><td><input type="number" step="0.25" min="0"></td><td><input></td><td><input></td><td><input></td><td><input></td></tr>
+    <tr><td>4</td><td><input type="date"></td><td><input></td><td><input></td><td><input type="number" step="0.25" min="0"></td><td><input></td><td><input></td><td><input></td><td><input></td></tr>
+    <tr><td>5</td><td><input type="date"></td><td><input></td><td><input></td><td><input type="number" step="0.25" min="0"></td><td><input></td><td><input></td><td><input></td><td><input></td></tr>
+    <tr><td>6</td><td><input type="date"></td><td><input></td><td><input></td><td><input type="number" step="0.25" min="0"></td><td><input></td><td><input></td><td><input></td><td><input></td></tr>
+    <tr><td>7</td><td><input type="date"></td><td><input></td><td><input></td><td><input type="number" step="0.25" min="0"></td><td><input></td><td><input></td><td><input></td><td><input></td></tr>
+    <tr><td>8</td><td><input type="date"></td><td><input></td><td><input></td><td><input type="number" step="0.25" min="0"></td><td><input></td><td><input></td><td><input></td><td><input></td></tr>
+    <tr><td>9</td><td><input type="date"></td><td><input></td><td><input></td><td><input type="number" step="0.25" min="0"></td><td><input></td><td><input></td><td><input></td><td><input></td></tr>
+    <tr><td>10</td><td><input type="date"></td><td><input></td><td><input></td><td><input type="number" step="0.25" min="0"></td><td><input></td><td><input></td><td><input></td><td><input></td></tr>
+    <tr><td>11</td><td><input type="date"></td><td><input></td><td><input></td><td><input type="number" step="0.25" min="0"></td><td><input></td><td><input></td><td><input></td><td><input></td></tr>
+    <tr><td>12</td><td><input type="date"></td><td><input></td><td><input></td><td><input type="number" step="0.25" min="0"></td><td><input></td><td><input></td><td><input></td><td><input></td></tr>
+  </tbody>
+</table>
+
+<div class="totals" id="totals">
+  <div class="total"><span class="label">Hours completed</span><span class="value" id="hoursCompleted">0.00</span></div>
+  <div class="total"><span class="label">Hours still needed</span><span class="value" id="hoursNeeded">0.00</span></div>
+  <div class="total"><span class="label">Total cost</span><span class="value" id="totalCost">$0.00</span></div>
+</div>
+
+<h2>Renewal checklist</h2>
+<div class="checkboxes">
+  <label class="checkbox-item"><input type="checkbox"> CE hours meet state requirement</label>
+  <label class="checkbox-item"><input type="checkbox"> Required categories completed (e.g., pharmacology, pain mgmt)</label>
+  <label class="checkbox-item"><input type="checkbox"> Certificates saved (digital + paper)</label>
+  <label class="checkbox-item"><input type="checkbox"> Renewal application submitted</label>
+  <label class="checkbox-item"><input type="checkbox"> Renewal fee paid</label>
+  <label class="checkbox-item"><input type="checkbox"> Confirmation received</label>
+</div>
+
+<h2>Notes &amp; certificate storage</h2>
+<div class="lines"><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div></div>
+
+<div class="signature"><strong>Nurse signature:</strong> ______________________________ &nbsp;&nbsp; <strong>Date:</strong> __________</div>
+
+<div class="credit">
+  Free Nurse Printables Pack &mdash; CE log<br>
+  Created and published by <strong>Asdale Dynamics, LLC</strong> (Indiana, formed October 2026). Beginner-friendly AI education, books, and practical tools. Dylan Asdale, RN &mdash; author of <em>The Massive AI Manual</em> and dylanasdale.github.io.<br>
+  MIT License &middot; Copyright (c) 2026 Asdale Dynamics, LLC &middot; Education only &mdash; not medical advice
+</div>
+</div>
+
+<div class="no-print">
+  <button class="btn" onclick="window.print()">Print this sheet</button>
+</div>
+
+<script>
+(function () {
+  var hourInputs = document.querySelectorAll('table tbody input[type="number"]');
+  var hoursCompletedEl = document.getElementById('hoursCompleted');
+  var hoursNeededEl = document.getElementById('hoursNeeded');
+  var totalCostEl = document.getElementById('totalCost');
+  var requiredInput = null;
+
+  function currency(v) {
+    return '$' + Math.max(0, v).toFixed(2);
+  }
+
+  function recompute() {
+    var hours = 0;
+    var cost = 0;
+    hourInputs.forEach(function (input) {
+      var h = parseFloat(input.value) || 0;
+      hours += h;
+    });
+    var costInputs = document.querySelectorAll('table tbody input:nth-child(7)');
+    costInputs.forEach(function (input) {
+      cost += parseFloat(input.value) || 0;
+    });
+    hoursCompletedEl.textContent = hours.toFixed(2);
+    hoursNeededEl.textContent = Math.max(0, (parseFloat(requiredInput && requiredInput.value) || 0) - hours).toFixed(2);
+    totalCostEl.textContent = currency(cost);
+  }
+
+  hourInputs.forEach(function (input) { input.addEventListener('input', recompute); });
+  document.querySelectorAll('table tbody input:nth-child(7)').forEach(function (input) { input.addEventListener('input', recompute); });
+
+  // Wire required-hours field if present
+  var fields = document.querySelectorAll('.field input');
+  fields.forEach(function (input) {
+    if (input.previousElementSibling && input.previousElementSibling.textContent && input.previousElementSibling.textContent.indexOf('CE hours required') >= 0) {
+      requiredInput = input;
+      input.addEventListener('input', recompute);
+    }
+  });
+
+  recompute();
+})();
+</script>
+</body>
+</html>
